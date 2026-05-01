@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main() {
+    int score = 0;
+    char ans;
+
+    printf("Mini Quiz Game\n");
+
+    // Question 1
+    printf("\nQ1: What is 2 + 2?\n");
+    printf("a) 3  b) 4  c) 5\n");
+    scanf(" %c", &ans);
+
+    if (ans == 'b' || ans == 'B') {
+        score++;
+    }
+
+    // Question 2
+    printf("\nQ2: What is capital of India?\n");
+    printf("a) Mumbai  b) Chennai  c) Delhi\n");
+    scanf(" %c", &ans);
+
+    if (ans == 'c' || ans == 'C') {
+        score++;
+    }
+
+    // Question 3
+    printf("\nQ3: Which is a programming language?\n");
+    printf("a) HTML  b) C  c) HTTP\n");
+    scanf(" %c", &ans);
+
+    if (ans == 'b' || ans == 'B') {
+        score++;
+    }
+
+    // Question 4
+    printf("\nQ4: What is 5 * 2?\n");
+    printf("a) 10  b) 12  c) 8\n");
+    scanf(" %c", &ans);
+
+    if (ans == 'a' || ans == 'A') {
+        score++;
+    }
+
+    // Display Score
+    printf("\nYour Score = %d\n", score);
+
+    // Final Result
+    if (score == 4) {
+        printf("Excellent\n");
+    } else if (score >= 2) {
+        printf("Good Job\n");
+    } else {
+        printf("Better Luck Next Time\n");
+    }
+
+    return 0;
+}
