@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int score = 0;
+    char ans;
+
+    cout << "Mini Quiz Game\n";
+
+    // Question 1
+    cout << "\nQ1: What is 2 + 2?\n";
+    cout << "a) 3  b) 4  c) 5\n";
+    cin >> ans;
+
+    if (ans == 'b' || ans == 'B') {
+        score++;
+    }
+
+    // Question 2
+    cout << "\nQ2: What is capital of India?\n";
+    cout << "a) Mumbai  b) Chennai  c) Delhi\n";
+    cin >> ans;
+
+    if (ans == 'c' || ans == 'C') {
+        score++;
+    }
+
+    // Question 3
+    cout << "\nQ3: Which is a programming language?\n";
+    cout << "a) HTML  b) C++  c) HTTP\n";
+    cin >> ans;
+
+    if (ans == 'b' || ans == 'B') {
+        score++;
+    }
+
+    // Question 4
+    cout << "\nQ4: What is 5 * 2?\n";
+    cout << "a) 10  b) 12  c) 8\n";
+    cin >> ans;
+
+    if (ans == 'a' || ans == 'A') {
+        score++;
+    }
+
+    // Display Score
+    cout << "\nYour Score = " << score << endl;
+
+    // Final Result
+    if (score == 4) {
+        cout << "Excellent\n";
+    } else if (score >= 2) {
+        cout << "Good Job\n";
+    } else {
+        cout << "Better Luck Next Time\n";
+    }
+
+    return 0;
+}
